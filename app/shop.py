@@ -31,7 +31,7 @@ class Shop:
     def buy_product(self, product_name: str, quantity: int) -> str:
         price = self.products[product_name] * quantity
         return (f"{quantity} {product_name}s for "
-                f"{int(price) if price.is_integer() else price} dollars\n")
+                f"{int(price) if price % 1 == 0 else price} dollars\n")
 
     def print_check(self, customer: Customer) -> str:
         current_date_time = datetime.datetime.now()
