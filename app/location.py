@@ -11,7 +11,8 @@ class Location:
 
     def __eq__(self, other: Location) -> bool:
         if isinstance(other, Location):
-            return self.x_coord == other.x_coord and self.y_coord == other.y
+            return (self.x_coord == other.x_coord
+                    and self.y_coord == other.y_coord)
         return False
 
     def distance_to_location(self, other: Location) -> int | float:

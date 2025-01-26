@@ -47,7 +47,7 @@ class Shop:
             f"Date: {check_time}\n"
             f"Thanks, {customer.name}, for your purchase!\n"
             "You have bought:\n"
-            f"{''.join(check_bought)}"
+            f'{"".join(check_bought)}'
             f"Total cost is {total_price} dollars\n"
             "See you again!\n"
         )
