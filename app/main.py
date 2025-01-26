@@ -6,7 +6,7 @@ from app.shop import create_shop_from_dict
 
 def shop_trip() -> None:
 
-    with open("config.json") as json_file:
+    with open("app/config.json", "r") as json_file:
         config = json.load(json_file)
 
     customers = [
